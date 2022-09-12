@@ -18,6 +18,22 @@ node_modules which contains all the modules for this project is selected to be i
 ### Run the Application.
 
 -TBA
+## Folder Structure
+
+### Components
+in the application, all components created should be in the components folder(src/components).
+
+### Services
+in the application, all services should be listed under the services folder(src/services).
+
+### Pages
+in the application, all pages should be listed under the pages folder(src/pages). 
+
+#### Tips
+-a Page is a component the app can be routed towards
+-a Component are what builds up the contents of a Page
+-both a Page and a component can utilize a service
+
 
 ## Making Changes.
 
