@@ -30,9 +30,9 @@ in the application, all services should be listed under the services folder(src/
 in the application, all pages should be listed under the pages folder(src/pages). 
 
 #### Tips
--a Page is a component the app can be routed towards
--a Component are what builds up the contents of a Page
--both a Page and a component can utilize a service
+- a Page is a component the app can be routed towards
+- a Component are what builds up the contents of a Page
+- both a Page and a component can utilize a service
 
 
 ## Making Changes.
