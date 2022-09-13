@@ -1,0 +1,32 @@
+<div class="login">
+
+  <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+    <h1>Login</h1>
+
+      <div class="form-group">
+        <label for="email">Username or Email <span style="color: red">*</span></label>
+        <input type="text" class="form-control" formControlName="email" placeholder="Email Address" required >
+        <span *ngIf="reactiveForm.get('email')?.errors && reactiveForm.get('email')?.touched">Username or Email is Required </span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password <span style="color: red">*</span></label>
+        <input type="password" placeholder="Password" class="form-control" formControlName="password" required >
+        <span *ngIf="reactiveForm.get('password')?.errors && reactiveForm.get('password')?.touched">Please Provide Password</span>
+      </div>
+
+      <div class="btn">
+        <input type="submit" value="Login">
+      </div>
+    <div class="text">
+        <p><a routerLink="">Lost Your Password?</a></p>
+        <p><a routerLink="/register">I do not have an Account?</a></p>
+
+    </div>
+
+    <!-- <div class="terms">
+        <input type="checkbox" name="" id=""> I have read and understand the <a href="">Terms</a> and <a href="">Conditions</a> that apply.
+    </div> -->
+</form>
+
+</div>
