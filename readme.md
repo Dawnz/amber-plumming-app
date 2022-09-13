@@ -14,6 +14,8 @@ node_modules which contains all the modules for this project is selected to be i
 ### Starting the Server.
 
 -TBA
+This will be hosted locally and can be found if you are on the campus wifi
+Current server endpoint is [a link](http://10.44.16.148:8080/)
 
 ### Run the Application.
 
