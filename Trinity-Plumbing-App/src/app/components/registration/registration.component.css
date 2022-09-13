@@ -1,0 +1,76 @@
+.login {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  border: 100%;
+  font-family: 'Inter', sans-serif;
+
+  /* height: 100vh */
+}
+
+.login form {
+  width: 600px;
+  /* height: 580px; */
+  height: auto;
+  /* border: 2px solid green; */
+  margin-top: 30px;
+  /* padding: 20px; */
+
+}
+
+.login form h1 {
+  padding: 10px 0px;
+  font-size: 45px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.login form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 0px 20px
+}
+
+.login form .form-group label {
+  padding: 5px 0px;
+  font-style: italic;
+}
+
+.login form .form-group input[type="text"], .login form .form-group input[type="password"]{
+  padding: 15px 15px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  border: none;
+}
+
+.login form .btn, .login form .text {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.login form .btn input[type="submit"]{
+  background: #05A0F8;
+  width: 100px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.login form .text {
+  font-size: 14px;
+}
+
+.login form .text a {
+  text-decoration: none;
+  color: #000;
+
+}
+
+
+
+/* .  */
