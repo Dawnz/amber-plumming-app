@@ -10,6 +10,7 @@ import { SlideshowComponent } from './components/slideshow/slideshow.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SlideshowComponent,
     ShoppingCartComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
