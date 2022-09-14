@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
     LoginComponent,
     RegistrationComponent,
     SlideshowComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
