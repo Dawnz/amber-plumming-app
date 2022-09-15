@@ -1,0 +1,131 @@
+.con {
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.con .head {
+  width: 100%;
+  height: 250px;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../../../assets/global/header_img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.con .head h1 {
+  padding: 10px 0px;
+  font-size: 40px;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+
+.con .head p {
+  /* padding: 10px 0px; */
+  font-size: 18px;
+  font-style: italic;
+  /* margin-bottom: 10px; */
+  color: #fff;
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login form {
+  width: 600px;
+  /* height: 580px; */
+  height: auto;
+  background-color: #F2F2F2;
+  /* border: 2px solid green; */
+  /* margin-top: 50px; */
+  margin: 5% 0%;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+/* .login form h1 {
+  padding: 10px 0px;
+  font-size: 45px;
+  font-style: italic;
+  margin-bottom: 10px;
+} */
+
+.login form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  padding: 0px 20px
+}
+
+.login form .form-group label {
+  padding: 5px 20px;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login form .form-group input[type="text"], .login form .form-group input[type="password"]{
+  padding: 15px 15px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+.login form .btn, .login form .text {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8rem;
+}
+
+.con .login form .text p{
+  font-size: 12px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.login form .btn input[type="submit"]{
+  /* background: #05A0F8; */
+  background: #FF9900;
+  width: 400px;
+  padding: 12px;
+  border-radius: 25px;
+  color: #fff;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+.login form .btn input[type="submit"]:hover{
+  background: #232F3E;
+
+}
+
+/* .login form .text {
+  font-size: 14px;
+} */
+
+.login form .text a {
+  text-decoration: none;
+  color: #000;
+
+}
+
+
+
+/* .  */
