@@ -26,7 +26,6 @@ header h4{
     font-style: italic;
     font-weight: 500;
     font-size: 55px;
-    /* margin: .8em; */
 }
 
 header .links{
@@ -55,11 +54,11 @@ header .links span{
 
 
 .product .product-info p{
-    font-size: 27px;
+    font-size: 20px;
 }
 
 .product .product-info .head{
-    font-size: 65px;
+    font-size: 50px;
 }
 
 .product .product-img{
@@ -148,7 +147,7 @@ header .links span{
     color: black;
     font-family: 'Josefin Sans';
     border: none;
-    font-size: 27px;
+    font-size: 22px;
     padding: .8em 1em;
     margin: .4em 1em 1em 0em;
     cursor: pointer;

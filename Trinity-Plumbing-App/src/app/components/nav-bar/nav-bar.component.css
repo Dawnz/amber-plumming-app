@@ -13,12 +13,11 @@ nav{
 nav .logo{
     display: flex;
     align-items: center;
- 
 }
 
 .logo p{
     font-weight:700;
-    font-Size: 27px;
+    font-Size: 24px;
     line-height: 32.68px;
     color: white;
     text-align: center;
@@ -45,7 +44,7 @@ nav .logo{
 
 .links img{
     border-radius: 10px;
-    padding: 6px 8px;
+    padding: 3px 4px;
     margin: 0px 10px;
 }
 
@@ -55,5 +54,5 @@ nav .logo{
 
 .links .cart img{
     background-color: #3498DB;
-    padding:8px 6px;
+    padding:4px 3px;
 }
