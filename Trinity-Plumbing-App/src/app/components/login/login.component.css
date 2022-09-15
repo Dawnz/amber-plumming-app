@@ -76,6 +76,7 @@
   background: rgba(0, 0, 0, 0.1);
   border-radius: 25px;
   border: none;
+  outline: none;
 }
 
 .con .login form .btn, .con .login form .text {
@@ -109,6 +110,12 @@
   border: none;
   margin-bottom: 30px;
   cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+.con .login form .btn input[type="submit"]:hover{
+  background: #232F3E;
+
 }
 
 /* .con .login form .text {

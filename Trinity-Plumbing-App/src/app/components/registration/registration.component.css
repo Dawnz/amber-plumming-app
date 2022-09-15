@@ -81,6 +81,7 @@
   background: rgba(0, 0, 0, 0.1);
   border-radius: 25px;
   border: none;
+  outline: none;
 }
 
 .login form .btn, .login form .text {
@@ -107,6 +108,12 @@
   border: none;
   margin-bottom: 20px;
   cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+.login form .btn input[type="submit"]:hover{
+  background: #232F3E;
+
 }
 
 /* .login form .text {
