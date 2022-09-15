@@ -12,6 +12,7 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ItemBoxComponent } from './components/item-box/item-box.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ItemBoxComponent } from './components/item-box/item-box.component';
     ShoppingCartComponent,
     NavBarComponent,
     FooterComponent,
-    ItemBoxComponent
+    ItemBoxComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
