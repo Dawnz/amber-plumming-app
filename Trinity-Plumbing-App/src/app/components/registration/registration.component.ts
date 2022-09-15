@@ -15,9 +15,10 @@ export class RegistrationComponent implements OnInit {
   ngOnInit(): void {
     this.reactiveForm = new FormGroup({
       email : new FormControl('', Validators.required),
+      userName: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(16)]),
+      role: new FormControl('', Validators.required),
       password : new FormControl('', Validators.required),
       passwordConfirmed : new FormControl('', Validators.required),
-      userName: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(16)])
     })
   }
 
