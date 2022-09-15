@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+.outer-container{
+    padding: 0 5%;
+    font-family:'Josefin Sans';
+}
+
+.backButton{
+    display: flex;
+    align-items: center;
+}
+
+.backButton p{
+    font-family:'Josefin Sans';
+    font-weight:400;
+    Size:20px;
+    line-height: 20px;
+    margin-left: 12px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+
+.container .heading{
+    font-weight:400;
+    font-style: italic;
+}
+
+.container .yourCart{
+    grid-column: 1/3;
+    line-height: 0;
+    text-transform: uppercase;
+}
+
+.container .item-in-cart{
+   display: flex;
+   justify-content: space-between;
+   margin: 40px 0px;
+   gap: 2px;
+}
+
+.container .item-in-cart h3,.container .item-in-cart h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.container .item-in-cart h3{
+    font-size: 27px;
+}
+
+.container .item-in-cart h4{
+    font-size: 16px;
+}
+
+.container .item-in-cart .description{
+    margin: 2.4em 0px;
+    line-height: 4px;
+}
+
+.container .item-in-cart .buttons button{
+    text-transform: uppercase;
+    background-color: #D9D9D9;
+    border: none;
+    font-family:'Josefin Sans';
+    font-style: italic;
+    padding: .6em 1.4em;
+    margin-right: 10px;
+}
+
+.container .yourCart .heading{
+    color: black;
+    /* border: 1px solid red; */
+    font-size: 27px;
+    background-color: #D9D9D9;
+    border: 1px solid #D9D9D9;
+    padding: 12px 6px;
+}
+
+.container .orderSummary{
+    grid-column: 3/4;
+    background-color: black;
+    padding: 0px;
+    min-width: 30vw;
+}
+
+.orderSummary .heading{
+    color: white;
+    /* text-align: center; */
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.orderSummary .order-button{
+    background-color: #0082C7;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    font-style: italic;
+    font-size: 20px;
+    padding:0.6em 2.4em;
+    max-width: 99%;
+}
+
+.summary-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0px 20px;
+}
+
+.orderSummary .subTotal{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.orderSummary .sum{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.orderSummary .sum-topic{
+    font-size: 20px;
+}
+
+
+.orderSummary  .sum-location{
+    /* text-align: justify; */
+    text-transform: uppercase;
+    font-family: 700;
+    max-width: 210px;
+}
+
+.orderSummary .tax{
+    font-size: 14px;
+}
+
+.summary-container .head{
+    font-size: 20px;
+}
+
+.orderSummary .total{
+    font-size: 29px;
+}

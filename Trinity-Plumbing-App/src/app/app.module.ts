@@ -7,12 +7,20 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { StorePageComponent } from './components/store-page/store-page.component';
+import { SlideshowComponent } from './components/slideshow/slideshow.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegistrationComponent,
+    SlideshowComponent,
+    ShoppingCartComponent,
+    NavBarComponent,
+    FooterComponent,
     StorePageComponent
   ],
   imports: [
