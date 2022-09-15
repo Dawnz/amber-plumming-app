@@ -12,4 +12,11 @@ export class ProductDetailComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  minus(amount:any){
+    amount = Number(amount.innerText--)
+  }
+
+  plus(amount:any){
+    amount = Number(amount.innerText++)
+  }
 }

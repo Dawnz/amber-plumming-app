@@ -61,11 +61,11 @@
             <p>Quantity:</p>
             <div class="quantity-input" style="position: relative;">
                 <div>
-                    <p #amount>1</p>
-                    <div class="click minus">
+                    <p #amount >1</p>
+                    <div class="click minus" (click)="minus(amount)">
                         <img src="/assets/minus.png" alt="">
                     </div>
-                    <div class="click plus">
+                    <div class="click plus" (click)="plus(amount)">
                         <img src="/assets/plus.png" alt="">
                     </div>
                 </div>
