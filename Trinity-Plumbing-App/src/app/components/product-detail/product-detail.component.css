@@ -10,14 +10,14 @@ header{
     background-color: black;
     color: white;
     background-image: url('/assets/product-background.png');
-    /* padding: 4em 0em; */
-    height: 325px;
-    background-repeat: repeat;
+    /* height: 100%; */
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
+    background-size: auto 50%;
 }
 
 header h4{
