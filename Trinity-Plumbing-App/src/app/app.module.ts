@@ -13,7 +13,11 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ItemBoxComponent } from './components/item-box/item-box.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+
 import { AdminRegistrationComponent } from './pages/admin-registration/admin-registration.component';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +29,8 @@ import { AdminRegistrationComponent } from './pages/admin-registration/admin-reg
     ShoppingCartComponent,
     NavBarComponent,
     FooterComponent,
+    LandingPageComponent,
+    ProductDetailComponent
     ItemBoxComponent,
     LandingPageComponent,
     AdminRegistrationComponent
