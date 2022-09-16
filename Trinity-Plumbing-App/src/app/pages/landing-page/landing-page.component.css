@@ -6,7 +6,8 @@
     /* border: 1px solid black; */
 }
 header{
-    background-image: url('/assets/MainheaderBackground.png');
+    /* background-image: url('/assets/MainheaderBackground.png'); */
+    background-image: url('https://coast-wp.imgix.net/2020/08/pexels-suntorn-somtong-1029243-scaled.jpg?auto=format&fit=scale&h=1024&ixlib=php-3.3.1&w=1536&wpsize=1536x1536');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 8% 0px;
