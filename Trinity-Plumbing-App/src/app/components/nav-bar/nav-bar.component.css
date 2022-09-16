@@ -15,6 +15,11 @@ nav .logo{
     align-items: center;
 }
 
+nav .logo img{
+    cursor: pointer;
+}
+
+
 .logo p{
     font-weight:700;
     font-Size: 24px;
