@@ -9,7 +9,7 @@
 header{
     background-color: black;
     color: white;
-    background-image: url('/assets/product-background.png');
+    background-image: url('/assets/global/header_img.jpg');
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,7 +179,7 @@ header .links span{
     font-family: 'Inter';
     font-style: italic;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .recommeded-products{
@@ -190,7 +190,7 @@ header .links span{
     font-family: 'Inter',sans-serif;
     font-style: italic;
     font-weight: 500;
-    font-size: 52px;
+    font-size: 40px;
     text-align: center;
 }
 

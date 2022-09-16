@@ -1,23 +1,87 @@
 <div class="container">
     
-     <!-- shipping navigation -->
+     <section>
+          <!-- shipping navigation -->
      <app-stepper-nav></app-stepper-nav>
 
-        <!-- shipping info -->
-     <div class="shipping-info">
-          <section class="contact"></section>
-          <section class="ship-to"></section>
+     <!-- shipping info -->
+  <div class="shipping-info">
+       <section class="contact-container">
+            <div class="info">
+                 <p>Contact</p>
+                 <p class="contact">Daniel@gmail.com</p>
+            </div>
+            <div class="change">
+                 <p>Change</p>
+            </div>
+       </section>
+       <section class="ship-to-container">
+            <div class="info">
+                 <p>Ship To</p>
+                 <p class="ship-to">Grove Street, 12, San Andreas, Jamaica</p>
+            </div>
+            <div class="change">
+                 <p>Change</p>
+            </div>
+       </section>
+  </div>
+
+  <div class="shipping-method">
+       <h4>Shipping Method</h4>
+       <div>
+
+       </div>
+  </div>
+
+  <!----------- lower navigation ----------->
+  <div class="lower-navigation">
+       <section class="return-option" style="cursor: pointer;">
+           <i class="fa-solid fa-less-than"></i>
+           <p style=" margin-left: 8px;">Return to Cart</p>
+       </section>
+     
+       <section>
+           <button class="cnt-shopping" style="cursor: pointer;">Continue to Shopping</button>
+       </section>
+   </div>
+     </section>
+
+    <!----------- items purchased ----------->
+    <section class="items-purchase">
+
+     <div class="prd-pricing-details">
+         <section class="img-and-name">
+             <section class="img">
+                 <img src="/assets/axe 1.png" alt="">
+                 <div class="count">1</div>
+             </section>
+
+             <section class="name">
+                 <p class="prd-name">Timerwood Axe</p>
+                 <p class="prd-size">Small / Red</p>
+             </section>
+         </section>
+
+         <section class="price">
+             <p  class="amount">$1,200.00</p>
+         </section>
      </div>
 
-     <!----------- lower navigation ----------->
-     <div class="lower-navigation">
-          <section class="return-option" style="cursor: pointer;">
-              <i class="fa-solid fa-less-than"></i>
-              <p style=" margin-left: 8px;">Return to Cart</p>
-          </section>
-        
-          <section>
-              <button class="cnt-shopping" style="cursor: pointer;">Continue to Shopping</button>
-          </section>
-      </div>
+     <div class="sub-total-container">
+         <div class="sub-total">
+             <p class="sub-total-name">Subtotal</p>
+             <p class="amount">$1,200.00</p>
+         </div>
+         <div class="shipping">
+             <p class="shipping-name">Shipping</p>
+             <p>$2,250.00</p>
+         </div>
+     </div>
+
+     <div class="total">
+         <p>Total</p>
+         <p>$1,200.00</p>
+     </div>
+ </section>
+     
 </div>
