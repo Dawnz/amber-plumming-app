@@ -9,7 +9,7 @@ export class LandingPageComponent implements OnInit {
 
   constructor() { }
 
-  // should be replaced with data from database and splce for only three item
+  // should be replaced with data from database and spliced for only three items
   items=[
     {
       name:'Sinks',

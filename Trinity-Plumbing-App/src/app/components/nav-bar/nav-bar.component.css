@@ -41,6 +41,7 @@ nav .logo img{
     display: flex;
     align-items: center;
     margin-left: 40px;
+    cursor: pointer;
 }
 
 .links .myAccount{
