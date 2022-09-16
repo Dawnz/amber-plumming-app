@@ -37,7 +37,7 @@
 <div class="card-container" >
     <!-------- three most popular items --------->
     <div class="card" *ngFor="let item of items">
-            <img src="{{item.image}}" alt="Avatar" style="width:100%; height: 50%">
+        <img src="{{item.image}}" alt="Avatar" style="width:100%; height: 50%">
         <div class="container">
           <h4>{{item.name}}</h4> 
           <p>{{(item.description.length > 74) ? item.description.slice(0, 74) + " ...": item.description}}</p> 
@@ -70,3 +70,11 @@
 <div class="our-products">
     <button class="view-products" routerLink="/store">View our products</button>
 </div>
+
+
+
+
+
+
+
+

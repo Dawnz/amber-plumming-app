@@ -20,6 +20,7 @@ import { AdminRegistrationComponent } from './pages/admin-registration/admin-reg
 import { ShippingInfoComponent } from './components/shipping-info/shipping-info.component';
 import { StepperNavComponent } from './components/stepper-nav/stepper-nav.component';
 import { ShippingComponent } from './components/shipping/shipping.component';
+import { CardComponent } from './components/card/card.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ShippingComponent } from './components/shipping/shipping.component';
     AdminRegistrationComponent,
     ShippingInfoComponent,
     StepperNavComponent,
-    ShippingComponent
+    ShippingComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

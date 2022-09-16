@@ -19,11 +19,10 @@ nav .logo img{
     cursor: pointer;
 }
 
-
 .logo p{
     font-weight:700;
     font-Size: 24px;
-    line-height: 32.68px;
+    line-height: 32px;
     color: white;
     text-align: center;
 }
