@@ -18,6 +18,7 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 
 import { AdminRegistrationComponent } from './pages/admin-registration/admin-registration.component';
 import { ShippingInfoComponent } from './components/shipping-info/shipping-info.component';
+import { StepperNavComponent } from './components/stepper-nav/stepper-nav.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { ShippingInfoComponent } from './components/shipping-info/shipping-info.
     ItemBoxComponent,
     LandingPageComponent,
     AdminRegistrationComponent,
-    ShippingInfoComponent
+    ShippingInfoComponent,
+    StepperNavComponent
   ],
   imports: [
     BrowserModule,

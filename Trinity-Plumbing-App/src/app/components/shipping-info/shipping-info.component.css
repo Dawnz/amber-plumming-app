@@ -1,39 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
-/*---------- top navigation ---------- */
-.contact-info .heading{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    text-transform: uppercase;
-    margin: 0 0 1% 0;
-}
 
-
-
-.shipping-navigation .nav {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-.shipping-navigation .nav li{
-    font-family: 'Inter';
-    list-style: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    margin:0px 6px;
-    cursor: pointer;
-}
-
-.shipping-navigation .nav i{
-    font-size: 10px;
-   
-}
 
 .shipping-contact-info{
     font-family: 'Inter';
