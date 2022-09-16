@@ -1,18 +1,19 @@
 <div class="container">
 
     <!----------- contact information ----------->
-    <section class="contact-info">
+    <section class="contact-info" >
         <!-- shipping navigation -->
         <app-stepper-nav></app-stepper-nav>
 
          <!----------- shipping and contact form ----------->
-        <div class="shipping-contact-info">
+        <div class="shipping-contact-info" >
+            <form action="" [formGroup]="shippingInfo" (submit)=" shippingInfoSubmit()">
             <section class="login">
                 <h4>Contact Information</h4>
                 <p style="margin: 30px 0 6px 0px;">Already have an account ? <a href="">Login</a></p>
             </section>
 
-            <input type="text" class="email" placeholder="Email or Mobile Number">
+            <input type="text" class="email" placeholder="Email or Mobile Number" >
             <div>
                 <input type="checkbox" name="" id="">
                 Email me with news and offers 
@@ -23,9 +24,9 @@
             <section>
                 <h4>Shipping Address</h4>
 
-                    <form action="">
+                   
                         <div class="input-container" class="select">
-                            <select name="" id="">
+                            <select name="" id="" formControlName="country">
                                 <option value="" disabled selected>Country/Region</option>
                                 <option value="{{location}}" *ngFor="let location of locations">{{location}}</option>
                              </select>
@@ -35,27 +36,27 @@
         
                         <!----------- customer name ----------->
                         <div class="customer-name input-container">
-                            <input type="text" placeholder="First Name">
-                            <input type="text" placeholder="Last Name">
+                            <input type="text" placeholder="First Name" formControlName="firstName">
+                            <input type="text" placeholder="Last Name" formControlName="lastName">
                         </div>
         
                         <!----------- address ----------->
                         <div class="input-container">
-                            <input type="text" class="address" placeholder="Address">
+                            <input type="text" class="address" placeholder="Address" formControlName="address">
                         </div>
         
                         <!----------- apartment ----------->
                         <div class="input-container">
-                            <input type="text" class="apartment" placeholder="Apartment, suite, ect. (optional)">
+                            <input type="text" class="apartment" placeholder="Apartment, suite, ect. (optional)" formControlName="apartment">
                         </div>
         
                         <!----------- city ----------->
                         <div class="input-container">
-                            <input type="text" class="city" placeholder="City">
+                            <input type="text" class="city" placeholder="City" formControlName="city">
                         </div>
         
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="" id="" >
                             save this information
                         </div>
                        
@@ -70,10 +71,11 @@
                                 <button class="cnt-shopping" style="cursor: pointer;">Continue to Shopping</button>
                             </section>
                         </div>
-                    </form>
+                    
                
                   <!----------- lower navigation ends here ----------->
             </section>
+        </form>
         </div>
 
     </section>
