@@ -1,11 +1,10 @@
-
 ## Getting Started
 
 ### Cloning the Project
 
 To have a local copy of the project to work on clone the repository using the command `git clone https://github.com/Dawnz/amber-plumming-app.git` in the terminal.
 
-This will create a folder  in the directory specified in the terminal. Use the command ` cd <folder name>` to change the directory into the project folder.
+This will create a folder in the directory specified in the terminal. Use the command ` cd <folder name>` to change the directory into the project folder.
 
 ### Installing the Dependencies.
 
@@ -20,22 +19,26 @@ Current server endpoint is [here](http://10.44.16.148:8080/)
 ### Run the Application.
 
 -TBA
+
 ## Folder Structure
 
 ### Components
+
 in the application, all components created should be in the components folder(src/components).
 
 ### Services
+
 in the application, all services should be listed under the services folder(src/services).
 
 ### Pages
-in the application, all pages should be listed under the pages folder(src/pages). 
+
+in the application, all pages should be listed under the pages folder(src/pages).
 
 #### Tips
-- a Page is a component the app can be routed towards
-- a Component are what builds up the contents of a Page
-- both a Page and a component can utilize a service
 
+-  a Page is a component the app can be routed towards
+-  a Component are what builds up the contents of a Page
+-  both a Page and a component can utilize a service
 
 ## Making Changes.
 
@@ -50,23 +53,23 @@ Before you make a change ensure that you the most updated version of the project
 After you make the necessary changes to the project, run the command `git add .` which adds all the changes to the staging area to signal that its ready to be committed. After which run the command `git commit -m "<message that describes the changes>"` to make changes to that branch.
 
 ### Publishing the change for review.
-If it is your first time making changes, you should first run the command `git pull origin develop` to retrieve the latest code from the Team. 
+
+If it is your first time making changes, you should first run the command `git pull origin develop` to retrieve the latest code from the Team.
 <br>
 
-If there is any merge conflicts you would need to first resolve them by accepting your changes or incomming changes from the Team's github branch. 
+If there is any merge conflicts you would need to first resolve them by accepting your changes or incomming changes from the Team's github branch.
 After you have resolved the issues, commit the changes. This would therefore fix the merge conflict. When you have completed the merge you should then run the command `git push origin --set-upstream <your branch name here>` which will push the changes you have made to github in the branch that you defined in the command.
 
 <br>
 
-Any Subsequent changes that you make you just need to first pull from the Team's repository, fix any merge conflicts, then commit and push to your branch on github. 
+Any Subsequent changes that you make you just need to first pull from the Team's repository, fix any merge conflicts, then commit and push to your branch on github.
 
 ### Creating a Pull Request
 
-Once you push to the github branch, A prompt will be shown in the repository telling you that you have changes on your branch and if you wish to create a pull request. 
-Additionally you could also go to the **Pull Request** Tab then select the option to create a pull request. 
+Once you push to the github branch, A prompt will be shown in the repository telling you that you have changes on your branch and if you wish to create a pull request.
+Additionally you could also go to the **Pull Request** Tab then select the option to create a pull request.
 
 Once you select the branch you want to make the request to then go ahead and select the option to create pull request.
-
 
 ### Viewing the complete project.
 
@@ -74,10 +77,12 @@ Since we are using the main branch to house the complete project. You can view t
 
 ### Seeing all the changes in the project.
 
-This can be done by first running the command `git checkout main` to switch to the main branch, then using `git pull main`. This will pull all the updated data from the github main branch to your local main branch. **DO NOT MAKE ANY CHANGES TO THE MAIN BRANCH**. 
+This can be done by first running the command `git checkout main` to switch to the main branch, then using `git pull main`. This will pull all the updated data from the github main branch to your local main branch. **DO NOT MAKE ANY CHANGES TO THE MAIN BRANCH**.
 
 ## Being Assigned Issues
+
 Throughout the lifecycle of this application you may be assigned issues to have complete. These issues may or may not be assigned to individuals. If an issue is assigned to you. You would simply follow the regular procedures of making the necessary updates as per described by the issues. Then commit those changes. For each commit towards the completion of the issue, it is recommended that you specify the issue number/ID in the commit message. An example video demonstrating this can be found here **[Working with Issues](https://youtu.be/TKJ4RdhyB5Y)**
 
 ## Requesting a Review
+
 It is good practice to request a review whenever you make a pull request. To do this, In the list of pull requests, click the pull request that you'd like to ask a specific person or a team to review. Navigate to Reviewers in the right sidebar. To request a review from a suggested person under Reviewers, next to their username, click Request.
