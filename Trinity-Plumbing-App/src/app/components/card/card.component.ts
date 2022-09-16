@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input} from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
 
   constructor() { }
+
+  // input field taht will accept inputs from database
+  @Input()product:any
 
   ngOnInit(): void {
   }
