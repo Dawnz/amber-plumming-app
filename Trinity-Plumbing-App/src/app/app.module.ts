@@ -17,6 +17,7 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 import { AdminRegistrationComponent } from './pages/admin-registration/admin-registration.component';
+import { ShippingInfoComponent } from './components/shipping-info/shipping-info.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { AdminRegistrationComponent } from './pages/admin-registration/admin-reg
     ProductDetailComponent,
     ItemBoxComponent,
     LandingPageComponent,
-    AdminRegistrationComponent
+    AdminRegistrationComponent,
+    ShippingInfoComponent
   ],
   imports: [
     BrowserModule,
