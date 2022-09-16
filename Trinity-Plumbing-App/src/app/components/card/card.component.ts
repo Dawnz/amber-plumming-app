@@ -10,9 +10,13 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   // input field taht will accept inputs from database
-  @Input()product:any
+  @Input()products:any
+
+  // temporary database, database will be binded to component when it is applied to the store and product details section
+ 
 
   ngOnInit(): void {
   }
 
+  
 }

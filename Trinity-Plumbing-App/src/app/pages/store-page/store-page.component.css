@@ -129,11 +129,11 @@
 
 .con .store .items .itemCon {
   width: 100%;
-  /* border: 2px solid blue; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+ 
 }
 
 .con .store .items .itemCon .box {

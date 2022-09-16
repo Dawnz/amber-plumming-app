@@ -1,18 +1,32 @@
 <!-- card design -->
-<div class="el-wrapper">
+  <div class="product-wrapper" >
     <div class="box-up">
-      <img class="img" src="https://www.ikea.com/us/en/images/products/kallsjoen-pillar-faucet-chrome-plated__0914025_pe783844_s5.jpg?f=s" alt="">
-        <div class="img-info">
-          <div class="info-inner">
-            
-            <span class="p-name">Kitchen Pipe Chrome</span>
-            <span class="p-company">Something</span>
-          </div>
-        <div class="a-size">
-          <img src="/assets/eye.png" alt="">
-          <img src="/assets/wishlist.png" alt="">
-          <img src="/assets/shopping-cart.png" alt="">
+        <!------------- product image -------------->
+        <div class="product-img">
+          <img class="img" src="{{products.img}}" alt="" width="100%">
         </div>
+     
+      <div class="img-info">
+          <div class="info-inner">
+            <!------------- product name from database -------------->
+            <span class="p-name">{{products.name}}</span>
+          </div>
+
+        <div class="a-size">
+              <!------------- product actions -------------->
+          <div>
+            <img src="/assets/eye.png" alt="">
+          </div>
+
+          <div>
+            <img src="/assets/wishlist.png" alt="">
+          </div>
+
+          <div>
+            <img src="/assets/shopping-cart.png" alt="">
+          </div>
+        </div>
+
      </div>
         </div>
 
@@ -22,11 +36,13 @@
       </div>
 
           <a class="cart" href="#">
-            <span class="price">$1,200</span>
+                <!------------- product price -------------->
+            <span class="price">{{products.price | currency}}</span>
             <span class="add-to-cart">
+               <!------------- product add to cart -------------->
               <span class="txt">Add to cart</span>
             </span>
           </a>
         </div>
-
 </div>
+
