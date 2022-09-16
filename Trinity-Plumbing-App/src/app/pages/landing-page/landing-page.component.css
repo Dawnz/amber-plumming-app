@@ -154,6 +154,14 @@ header .main-heading h4{
     height: 370px;
     border-radius: 20px;
     cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.card:hover{
+    top: -10px;
+    transition: top ease 0.5s;
 }
 
 .card img{
