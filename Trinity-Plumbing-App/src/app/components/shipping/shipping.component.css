@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.container{
+    padding: 40px;
+}
+
+.shipping-info{
+    border: 1px solid #000000;
+    border-radius: 10px;    
+}
+
+/*---------- lower navigation ---------- */
+.lower-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.lower-navigation .return-option{
+    display: flex;
+    align-items: center;
+    color: #0082C7;
+}
+
+.lower-navigation .return-option p{
+    font-family: 'Inter';
+    font-size: 20px;
+}
+
+.lower-navigation .cnt-shopping{
+    background: #0082C7;
+    border-radius: 11px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: .8em .8em;
+}

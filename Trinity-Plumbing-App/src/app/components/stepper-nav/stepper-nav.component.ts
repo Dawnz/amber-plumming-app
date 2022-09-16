@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
   <div class="shipping-navigation">
             <h4 class="heading">Trinity</h4>
+            <!------------- links ------------->
             <ul class="nav">
                 <li>Cart</li>
                 <i class="fa-solid fa-2x fa-greater-than"></i>
@@ -17,7 +18,7 @@ import { Component, OnInit } from '@angular/core';
         </div>
   `,
   styles: [`
-    /*---------- top navigation ---------- */
+  
 .shipping-navigation .heading{
     font-family: 'Inter';
     font-style: normal;
