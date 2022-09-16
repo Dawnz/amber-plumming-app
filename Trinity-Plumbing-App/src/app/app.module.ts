@@ -12,7 +12,7 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ItemBoxComponent } from './components/item-box/item-box.component';
-import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
@@ -30,7 +30,7 @@ import { AdminRegistrationComponent } from './pages/admin-registration/admin-reg
     NavBarComponent,
     FooterComponent,
     LandingPageComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
     ItemBoxComponent,
     LandingPageComponent,
     AdminRegistrationComponent
