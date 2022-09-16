@@ -84,6 +84,7 @@
     background-color: black;
     padding: 0px;
     min-width: 30vw;
+    margin-bottom: 20px;
 }
 
 .orderSummary .heading{
@@ -106,6 +107,7 @@
     font-size: 20px;
     padding:0.6em 2.4em;
     max-width: 99%;
+    cursor: pointer;
 }
 
 .summary-container{
