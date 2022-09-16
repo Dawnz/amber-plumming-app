@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    color: white;
+    background-image: url('/assets/product-background.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+header h4{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 55px;
+}
+
+header .links{
+    text-align: center; 
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+}
+
+header .links span{
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0 6px;
+}
+
+.container{
+    padding: 4em;
+}
+
+.product{
+    display: flex;
+    gap: 4em;
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+.product .product-info p{
+    font-size: 20px;
+}
+
+.product .product-info .head{
+    font-size: 50px;
+}
+
+.product .product-img{
+    width: 603px;
+}
+
+.product .product-img img{
+    width: 100%;
+}
+
+.product .product-content{
+    display: flex;
+    justify-content: space-between;
+    line-height: 4em;
+}
+
+.product .size .sizes{
+    display: flex;
+}
+
+.product .size .sizes p{
+    background: #FFFFFF;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 .4em ;
+}
+
+.product .product-content .color{
+    display: flex;
+}
+
+.product .product-content .color div{
+    height: 41px;
+    margin: 0 0 0 .4em ;
+    width: 41px;
+    border-radius: 50%;
+}
+.quantity-input{
+    background: #D9D9D9;
+    border-radius: 50px;
+    width: 93px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.quantity-input .click{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.quantity-input .minus{
+    left: 6px;
+}
+
+.quantity-input .plus{
+    right: 6px;
+}
+
+.product .product-content .color div:nth-child(1){
+    background-color: #000;
+}
+.product .product-content .color div:nth-child(2){
+    background-color: red;
+}
+.product .product-content .color div:nth-child(3){
+    background-color: green;
+}
+
+.product .product-content .size .sizes{
+    display: flex;
+}
+
+.button-action button{
+    background: #FF9900;
+    border-radius: 50px;
+    color: black;
+    font-family: 'Josefin Sans';
+    border: none;
+    font-size: 22px;
+    padding: .8em 1em;
+    margin: .4em 1em 1em 0em;
+    cursor: pointer;
+}
+
+.tabs{
+    margin-top: 4em;
+}
+
+.tabs button{
+    font-size: 22px;
+    background: #FF9900;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px 10px 0px 0px;
+    font-family: 'Josefin Sans';
+    padding: .8em 1em;
+    margin-right: .6em;
+    cursor: pointer;
+}
+
+.product-information{
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 0px 30px 30px 30px;
+    padding: 1em;
+}
+
+.product-information p{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.recommeded-products{
+    margin-top: 2em;
+}
+
+.recommeded-products .heading{
+    font-family: 'Inter',sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 52px;
+    text-align: center;
+}
+
+/* ---------------items container------------ */
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    color: white;
+}
+
+.card{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    margin: 10px 0px;
+    width: 400px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #232F3E;
+    text-align: center;
+}
+
+.card img{
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card .container{
+    padding: 0px 10px;
+}
+
+.card .container .heading{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin:.8em 0 1em 0;
+}
+
+.card .container .price{
+    font-size: 30px;
+}

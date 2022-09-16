@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+nav{
+    background-color: #212F3D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10% 0 5%;
+    font-family: 'Inter';
+    height: 100px;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo p{
+    font-weight:700;
+    font-Size: 24px;
+    line-height: 32.68px;
+    color: white;
+    text-align: center;
+}
+
+.links p{
+    font-size: 19px;
+    color: white;
+}
+
+.links{
+    display: flex;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.links .myAccount{
+    color: black;
+}
+
+.links img{
+    border-radius: 10px;
+    padding: 3px 4px;
+    margin: 0px 10px;
+}
+
+.links .myAccount img{
+    background-color: white; 
+}
+
+.links .cart img{
+    background-color: #3498DB;
+    padding:4px 3px;
+}

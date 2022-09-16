@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+*{
+    margin: 0;
+    /* border: 1px solid black; */
+}
+header{
+    background-image: url('/assets/MainheaderBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8% 0px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgb(118, 127, 135);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+
+.main-heading{
+    position: relative;
+}
+
+.main-heading .search-bar{
+    position: relative;
+    display: inline-block;
+}
+
+.main-heading .search-bar img{
+    position: absolute;
+    right: 10px;
+    height: 40px;
+    top: 62%;
+    transform: translateY(-50%);
+}
+.main-heading div{
+   text-align: center;
+}
+
+.main-heading input{
+    width: 664px;
+    height: 64px;
+    border: none;
+    background: #fff;
+    border-radius: 25px;
+    margin: 40px auto 8px auto;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+/* .main-heading input:hover{
+    outline: none;
+} */
+
+.main-heading input:focus{
+    outline: none;
+}
+
+header .main-heading h4{
+    color: #fff;
+    font-weight:700;
+    font-size:32px;
+    text-align: center;
+    font-family: 'Inter';
+}
+
+.second-section{
+    padding: 0px 5% 5% 5%;
+}
+.second-section .head{
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 84px;
+    color: #05A0F8; 
+   
+}
+
+.second-section .para{
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 100;
+    font-size: 50px;
+    color: #696969;
+    text-transform: uppercase;
+}
+
+/* ------------- navbbar design --------------- */
+.navbar{
+    /* width: 1042px; */
+    margin: 0 auto;
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+}
+
+.navbar ul{
+    border-radius: 30px;
+    background: #34495E;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1.6em 2em;
+    cursor: pointer;
+}
+
+.navbar li:not(:last-child){
+    border-right: 1px solid white;
+}
+
+/* ---------------items container------------ */
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 200px;
+}
+
+.card:nth-child(1){
+    background: #3498DB;
+}
+.card:nth-child(2){
+    background-color: #1ABC9C;
+    ;
+}
+.card:nth-child(3){
+    background-color: #E74C3C;
+}
+
+
+.card{
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 400;
+    margin: 10px 0px;
+    width: 340px;
+    height: 370px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card img{
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card .container{
+    padding: 0px 10px;
+}
+
+.card .container h4{
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.card .container p{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/* ---------------welcome message container------------ */
+.welcome-container{
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 400;
+    background-image: url('/assets/middleImg.png');
+    background-attachment: fixed;
+    padding: 40px;
+    height: 440px;
+    background-color: rgb(156, 155, 155);
+    background-blend-mode: multiply;
+}
+
+.welcome-container .head{
+    font-size: 70px;
+    text-align: center;
+}
+
+.welcome-container .second{
+    font-size: 43px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #05A0F8;
+    margin: 40px 0px;
+}
+
+.welcome-container .information{
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 30px 5%;
+}
+
+/* ---------------our brands container------------ */
+.our-brands{
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+    margin: 30px 0px 40px 0px;
+}
+
+.our-brands .brands{
+    display: flex;
+    justify-content: center;
+    background: #D9D9D9;
+    flex-wrap: wrap;
+}
+
+.our-brands .brands img{
+    width: 175px;
+    margin: 3% 2%;
+}
+
+.our-products{
+    margin: 4% 0px 14% 0px;
+}
+
+.view-products{
+    width: 472px;
+    height: 100px;
+    background: #05A0F8;
+    border-radius: 20px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+}
