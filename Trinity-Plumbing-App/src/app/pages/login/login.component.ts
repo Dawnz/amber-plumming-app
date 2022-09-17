@@ -15,6 +15,7 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class LoginComponent implements OnInit {
   constructor(private auth: AuthService, private router: Router) {}
+  errorMessage: string = '';
 
   reactiveForm: FormGroup = new FormGroup({
     email: new FormControl('', Validators.required),
@@ -28,16 +29,35 @@ export class LoginComponent implements OnInit {
     return this.reactiveForm.get('password')?.value;
   }
 
+  hasErrorMessage() {
+    if (this.errorMessage !== '') {
+      return true;
+    }
+    return false;
+  }
+  clearErrorMessage() {
+    this.errorMessage = '';
+  }
+
   ngOnInit(): void {}
   login() {
+    this.clearErrorMessage();
     this.auth
       .login({
         email: this.email,
         password: this.password,
       })
-      .subscribe(() => {
-        console.log('login successful');
-        this.router.navigateByUrl('/');
+      .subscribe({
+        next: (response) => {
+          console.log(response.data);
+          console.log('login successful');
+          this.router.navigateByUrl('/');
+        },
+        error: (response) => {
+          console.log('login failed');
+          console.log(response);
+          this.errorMessage = response;
+        },
       });
   }
 

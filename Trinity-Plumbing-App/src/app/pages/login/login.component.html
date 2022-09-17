@@ -5,6 +5,9 @@
   </div>
 
   <div class="login">
+    <div class="errorMessage" *ngIf="hasErrorMessage() === true">
+      {{ errorMessage }}
+    </div>
     <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <label for="email"

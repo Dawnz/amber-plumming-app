@@ -1,21 +1,38 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { BehaviorSubject, Observable, map, tap, shareReplay } from 'rxjs';
+import {
+  BehaviorSubject,
+  Observable,
+  map,
+  tap,
+  shareReplay,
+  of,
+  catchError,
+  throwError,
+} from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { APIResponse } from '../interfaces/api-response';
-import { User } from '../interfaces/user';
+import { User, UserResponse } from '../interfaces/user';
 const AUTH_DATA = 'user-Login';
 const AUTH_ROUTE = `${environment.baseUrl}/auth/login`;
+
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  private subject = new BehaviorSubject<User | null>(null);
-  user$: Observable<User | null> = this.subject.asObservable();
+  private subject = new BehaviorSubject<UserResponse | null>(null);
+  user$: Observable<UserResponse | null> = this.subject.asObservable();
 
   isLoggedIn$: Observable<boolean>;
   isLoggedOut$: Observable<boolean>;
+
+  private _handleHttpErrors(err: any) {
+    // return throwError((err: any) => {
+    //   return of({ status: err.status, message: err.message, data: retVal });
+    // });
+    return throwError(() => err.error.message);
+  }
 
   constructor(private http: HttpClient, private router: Router) {
     this.isLoggedIn$ = this.user$.pipe(map((user) => !!user));
@@ -25,9 +42,9 @@ export class AuthService {
       this.subject.next(JSON.parse(user));
     }
   }
-  login(credentials: User): Observable<APIResponse<User>> {
+  login(credentials: User): Observable<APIResponse<UserResponse>> {
     return this.http
-      .post<APIResponse<User>>(AUTH_ROUTE, {
+      .post<APIResponse<UserResponse>>(AUTH_ROUTE, {
         // TODO. implement login
         email: credentials.email,
         password: credentials.password,
@@ -35,11 +52,11 @@ export class AuthService {
       .pipe(
         tap((user) => {
           this.subject.next(user.data);
-          console.log(user.status);
 
-          localStorage.setItem(AUTH_DATA, JSON.stringify(user));
+          localStorage.setItem(AUTH_DATA, JSON.stringify(user.data));
         }),
-        shareReplay()
+        catchError(this._handleHttpErrors)
+        // shareReplay()
       );
   }
 
