@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'register', component: RegistrationComponent },
   { path: 'adminRegister', component: AdminRegistrationComponent },
   { path: 'store', component: StorePageComponent, canActivate: [AuthGuard] },
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({
