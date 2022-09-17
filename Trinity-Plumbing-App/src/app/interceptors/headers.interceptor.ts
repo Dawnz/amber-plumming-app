@@ -30,7 +30,6 @@ export class HeadersInterceptor implements HttpInterceptor {
         Authorization: `bearer ${this.token !== '' && this.token}`,
       },
     });
-    console.log(req.headers);
 
     return next.handle(req);
   }
