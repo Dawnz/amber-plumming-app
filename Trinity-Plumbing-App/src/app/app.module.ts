@@ -11,7 +11,6 @@ import { SlideshowComponent } from './components/slideshow/slideshow.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ItemBoxComponent } from './components/item-box/item-box.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
@@ -21,7 +20,8 @@ import { ShippingInfoComponent } from './components/shipping-info/shipping-info.
 import { StepperNavComponent } from './components/stepper-nav/stepper-nav.component';
 import { ShippingComponent } from './components/shipping/shipping.component';
 import { CardComponent } from './components/card/card.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatPaginatorModule} from '@angular/material/paginator'; 
 
 @NgModule({
   declarations: [
@@ -35,7 +35,6 @@ import { CardComponent } from './components/card/card.component';
     FooterComponent,
     LandingPageComponent,
     ProductDetailComponent,
-    ItemBoxComponent,
     LandingPageComponent,
     AdminRegistrationComponent,
     ShippingInfoComponent,
@@ -47,7 +46,9 @@ import { CardComponent } from './components/card/card.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
