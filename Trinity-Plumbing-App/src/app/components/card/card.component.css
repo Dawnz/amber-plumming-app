@@ -2,7 +2,7 @@
 
 .product-wrapper {
     width: 320px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     background-color: #fff;
     border: 1px solid rgba(128, 128, 128, 0.192);
     margin: 40px 0px;

@@ -9,7 +9,7 @@ import { RegistrationComponent } from './pages/registration/registration.compone
 import { StorePageComponent } from './pages/store-page/store-page.component';
 
 const routes: Routes = [
-  { path: 'home', component: LandingPageComponent, canActivate: [AuthGuard] },
+  { path: 'home', component: LandingPageComponent },
   { path: 'cart', component: ShoppingCartComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegistrationComponent },
