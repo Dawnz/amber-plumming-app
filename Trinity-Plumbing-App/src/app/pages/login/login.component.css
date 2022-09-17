@@ -1,5 +1,5 @@
 .con {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   width: 100%;
   height: 100vh;
 }
@@ -37,31 +37,33 @@
 
 .con .login {
   width: 100%;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
-
+.con .login .errorMessage {
+  text-align: center;
+  color: #f32013;
+  padding-top: 10px;
+}
 .con .login form {
   width: 600px;
   height: auto;
   /* height: 100vh; */
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   /* border: 2px solid green; */
   /* margin-top: 50px; */
   margin: 5% 0%;
   padding: 15px 30px;
   border-radius: 10px;
   /* padding: 20px; */
-
 }
-
 
 .con .login form .form-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  padding: 0px 20px
+  padding: 0px 20px;
 }
 
 .con .login form .form-group label {
@@ -71,7 +73,8 @@
   font-weight: 600;
 }
 
-.con .login form .form-group input[type="text"], .con .login form .form-group input[type="password"]{
+.con .login form .form-group input[type="text"],
+.con .login form .form-group input[type="password"] {
   padding: 15px 15px;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 25px;
@@ -79,7 +82,8 @@
   outline: none;
 }
 
-.con .login form .btn, .con .login form .text {
+.con .login form .btn,
+.con .login form .text {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -93,16 +97,15 @@
   padding-top: 15px;
 }
 
- .con .login form .text p{
+.con .login form .text p {
   font-size: 12px;
   font-weight: 600;
   font-style: italic;
 }
 
-
-.con .login form .btn input[type="submit"]{
+.con .login form .btn input[type="submit"] {
   /* background: #05A0F8; */
-  background: #FF9900;
+  background: #ff9900;
   width: 400px;
   padding: 12px;
   border-radius: 25px;
@@ -113,9 +116,8 @@
   transition: all ease-in-out 0.5s;
 }
 
-.con .login form .btn input[type="submit"]:hover{
-  background: #232F3E;
-
+.con .login form .btn input[type="submit"]:hover {
+  background: #232f3e;
 }
 
 /* .con .login form .text {
@@ -126,6 +128,5 @@
   text-decoration: none;
   color: #000;
 }
-
 
 /* .  */
