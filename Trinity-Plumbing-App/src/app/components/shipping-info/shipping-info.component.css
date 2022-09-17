@@ -128,9 +128,9 @@ select{
 }
 
 .prd-pricing-details .img{
-    width: 105px;
-    height: 105px;
-    margin-right: 18px;
+    width: 84px;
+    height: 84px;
+    margin-right: 20px;
 }
 
 .prd-pricing-details .name .prd-name ,.sub-total-name, .shipping-name{
@@ -169,7 +169,7 @@ select{
 }
 
 .amount{
-    font-size: 23px;
+    font-size: 18px;
 }
 
 .sub-total{
@@ -191,5 +191,5 @@ select{
 }   
 
 .total p {
-    font-size: 18px;
+    font-size: 22px;
 }
