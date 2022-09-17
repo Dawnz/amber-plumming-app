@@ -10,7 +10,6 @@ header{
     background-color: black;
     color: white;
     background-image: url('/assets/global/header_img.jpg');
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -62,11 +61,13 @@ header .links span{
 }
 
 .product .product-img{
-    width: 603px;
+    width: 600px;
+    height: 600px;
 }
 
 .product .product-img img{
     width: 100%;
+    height: 100%;
 }
 
 .product .product-content{
@@ -125,16 +126,6 @@ header .links span{
 
 .quantity-input .plus{
     right: 6px;
-}
-
-.product .product-content .color div:nth-child(1){
-    background-color: #000;
-}
-.product .product-content .color div:nth-child(2){
-    background-color: red;
-}
-.product .product-content .color div:nth-child(3){
-    background-color: green;
 }
 
 .product .product-content .size .sizes{
@@ -203,33 +194,3 @@ header .links span{
     color: white;
 }
 
-.card{
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 500;
-    margin: 10px 0px;
-    width: 400px;
-    border-radius: 20px;
-    cursor: pointer;
-    background: #232F3E;
-    text-align: center;
-}
-
-.card img{
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.card .container{
-    padding: 0px 10px;
-}
-
-.card .container .heading{
-    font-size: 30px;
-    text-transform: uppercase;
-    margin:.8em 0 1em 0;
-}
-
-.card .container .price{
-    font-size: 30px;
-}
