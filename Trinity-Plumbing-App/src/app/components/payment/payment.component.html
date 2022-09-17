@@ -1,0 +1,139 @@
+<div class="container">
+    <!-----------  left section ----------->
+    <section class="person-info">
+        <!-----------  navigation ----------->
+        <app-stepper-nav></app-stepper-nav>
+
+             <!----------------  shipping info --------------->
+    <div class="shipping-info">
+        <section class="contact-container">
+            <div class="info">
+                <p class="info-title">Contact</p>
+                    <!--------------- email entered in first stepper --------------->
+                <p class="contact">Daniel@gmail.com</p>
+            </div>
+            <div class="change">
+                <p>Change</p>
+            </div>
+        </section>
+
+        <section class="ship-to-container">
+            <div class="info">
+                <p class="info-title">Ship To</p>
+                            <!--------------- address entered in first stepper --------------->
+                <p class="ship-to">Grove Street, 12, San Andreas, Jamaica</p>
+            </div>
+            <div class="change">
+                <p>Change</p>
+            </div>
+        </section>
+
+        <section class="method-container">
+            <div class="info">
+                <p class="info-title">Method</p>
+                            <!--------------- address entered in first stepper --------------->
+                <p class="ship-to">Shipping Fee - $2,250.00</p>
+            </div>
+        </section>
+    </div>
+
+    <!----------- payment ----------->
+    <div class="payment">
+        <h4 style="margin: 0;">Payment</h4>
+        <p>All transactions are secure and encrypted</p>
+
+        <div class="card-detail">
+            <div class="credit-card-title">
+                <p style="margin: 0;">Credit Card</p>
+            </div>
+            <form action="" class="form">
+                <div class="input-field">
+                    <input type="text" placeholder="Card Number">
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Name on the card">
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="MM/YYYY">
+                    <input type="text" placeholder="Security Code">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!----------- shipping info if change ----------->
+    <div class="shipping">
+            <h4 style="margin-top: 20px">Billing Address</h4>
+            <p>Select the address that matches your card or payment method.</p>  
+    </div>
+
+    <div class="choose-shipment">
+        <input type="radio" id="sameAddress" name="address" value="sameAddress">
+        <label for="sameAddress">Same as Shipping Address</label><br>
+        <input type="radio" id="differentAddress" name="address" value="differentAddress">
+        <label for="differentAddress">Use a different billing Address</label><br>
+    </div>
+
+   
+  <!----------- lower navigation ----------->
+        <div class="lower-navigation">
+            <section class="return-option" style="cursor: pointer;">
+                <i class="fa-solid fa-less-than"></i>
+                <p style=" margin-left: 8px;">Return to Cart</p>
+            </section>
+        
+            <section>
+                <button class="cnt-shopping" style="cursor: pointer;">Pay Now</button>
+            </section>
+        </div>
+
+    </section>
+
+    <!----------- right section ----------->
+   <!----------- items purchased ----------->
+   <section class="items-purchase">
+    <!--------------- loop should start here for each item --------------->
+     <div class="prd-pricing-details">
+         <section class="img-and-name">
+             <section class="img">
+                <!--------------- each item image --------------->
+                 <img src="/assets/axe 1.png" alt="">
+                 <div class="count">1</div>
+             </section>
+
+             <section class="name">
+                <!--------------- each item name --------------->
+                 <p class="prd-name">Timerwood Axe</p>
+                 <!--------------- each item size and color --------------->
+                 <p class="prd-size">Small / Red</p>
+             </section>
+         </section>
+
+         <section class="price">
+            <!--------------- each item price --------------->
+             <p  class="amount">$1,200.00</p>
+         </section>
+     </div>
+     <!--------------- loop ends here --------------->
+
+     <div class="sub-total-container">
+         <div class="sub-total">
+             <p class="sub-total-name">Subtotal</p>
+             <!--------------- item subtotal --------------->
+             <p class="amount">$1,200.00</p>
+         </div>
+         <div class="shipping">
+             <p class="shipping-name">Shipping</p>
+             <!--------------- shipping sum --------------->
+             <p class="amount">$2,250.00</p>
+         </div>
+     </div>
+
+     <div class="total">
+         <p>Total</p>
+         <!--------------- total--------------->
+         <p>$1,200.00</p>
+     </div>
+ </section>
+     
+</div>

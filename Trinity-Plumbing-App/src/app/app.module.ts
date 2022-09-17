@@ -25,6 +25,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ErrorInterceptor } from './interceptors/error.interceptor';
 import { HeadersInterceptor } from './interceptors/headers.interceptor';
+import { PaymentComponent } from './components/payment/payment.component';
+
 
 @NgModule({
   declarations: [
@@ -44,6 +46,7 @@ import { HeadersInterceptor } from './interceptors/headers.interceptor';
     StepperNavComponent,
     ShippingComponent,
     CardComponent,
+    PaymentComponent,
   ],
   imports: [
     BrowserModule,

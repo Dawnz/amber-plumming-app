@@ -34,15 +34,16 @@
 <app-slideshow [autoSlide]="true"></app-slideshow>
 
 <!----------- card item container ------------->
-<div class="card-container" >
+<div class="card-container" data-aos="fade-up">
     <!-------- three most popular items --------->
-    <div class="card" *ngFor="let item of items">
+    <!-- <div class="card" *ngFor="let item of items">
         <img src="{{item.image}}" alt="Avatar" style="width:100%; height: 50%">
         <div class="container">
           <h4>{{item.name}}</h4> 
           <p>{{(item.description.length > 74) ? item.description.slice(0, 74) + " ...": item.description}}</p> 
         </div>
-    </div>
+    </div> -->
+    <app-card [products]="products" *ngFor="let products of items" class="card"></app-card>
 </div>
 
 <!----------- welcome message container ------------->
