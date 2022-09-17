@@ -16,7 +16,7 @@
     <ul>
         <li>Home</li>
         <li>Services</li>
-        <li>Store</li>
+        <li routerLink="/store">Store</li>
         <li>About us</li>
         <li>Contact us</li>
     </ul>
@@ -25,7 +25,7 @@
 <!------------------ second section ------------------>
 <section class="second-section">
     <p class="head">Enhance</p>
-    <p class="para">
+    <p class="para" data-aos="fade-right">
         Your Bathroom or kitchen with our high quality products!
     </p>
 </section>
@@ -34,36 +34,22 @@
 <app-slideshow [autoSlide]="true"></app-slideshow>
 
 <!----------- card item container ------------->
-<div class="card-container">
-
-    <div class="card">
-            <img src="/assets/sink.png" alt="Avatar" style="width:100%; height: 50%">
+<div class="card-container" >
+    <!-------- three most popular items --------->
+    <div class="card" *ngFor="let item of items">
+        <img src="{{item.image}}" alt="Avatar" style="width:100%; height: 50%">
         <div class="container">
-          <h4>Sinks</h4> 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing....</p> 
-        </div>
-    </div>
-    <div class="card">
-            <img src="/assets/sink.png" alt="Avatar" style="width:100%; height: 50%">
-        <div class="container">
-          <h4>Faucets</h4> 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing....</p> 
-        </div>
-    </div>
-    <div class="card">
-            <img src="/assets/sink.png" alt="Avatar" style="width:100%; height: 50%">
-        <div class="container">
-          <h4>Bath Tubs</h4> 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing....</p> 
+          <h4>{{item.name}}</h4> 
+          <p>{{(item.description.length > 74) ? item.description.slice(0, 74) + " ...": item.description}}</p> 
         </div>
     </div>
 </div>
 
 <!----------- welcome message container ------------->
 <div class="welcome-container">
-   <h4 class="head">Welcome To</h4>
-   <p class="second">Trinity hardware and plumbing supplies</p>
-   <p class="information">MES CUML DIA SED INENIASINGE DOLOR IPSUM COMMETE IPSUM COMNETUS MES INENIASINGE DOLOR.DOLOR IPSUM COMMETE PSUM COMNETU MES INENIASINGE DOLOR. MES CUML DIA SED INENIASINGE INENIASINGE
+   <h4 class="head" data-aos="fade-right">Welcome To</h4>
+   <p class="second" data-aos="fade-right">Trinity hardware and plumbing supplies</p>
+   <p class="information" data-aos="fade-right">MES CUML DIA SED INENIASINGE DOLOR IPSUM COMMETE IPSUM COMNETUS MES INENIASINGE DOLOR.DOLOR IPSUM COMMETE PSUM COMNETU MES INENIASINGE DOLOR. MES CUML DIA SED INENIASINGE INENIASINGE
     DOLOR IPSUM COMMETE IPSUM COMNETUS MES.MES CUML DIA SED INENIASINGE DOLOR IPSUM COMMETE
     IPSUM COMNETUS MES INENIASINGE DOLOR.DOLOR IPSUM COMMETE PSUM COMNETU MES.</p>
 </div>
@@ -82,5 +68,13 @@
 
 <!----------- view products section ------------->
 <div class="our-products">
-    <button class="view-products">View our products</button>
+    <button class="view-products" routerLink="/store">View our products</button>
 </div>
+
+
+
+
+
+
+
+

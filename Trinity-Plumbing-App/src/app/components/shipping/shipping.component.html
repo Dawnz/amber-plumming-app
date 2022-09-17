@@ -1,0 +1,98 @@
+<div class="container">
+    
+     <section style="border-right: 1px solid black;padding: 40px;">
+          <!--------------- shipping navigation --------------->
+     <app-stepper-nav></app-stepper-nav>
+
+     <!----------------  shipping info --------------->
+  <div class="shipping-info">
+       <section class="contact-container">
+            <div class="info">
+                 <p class="info-title">Contact</p>
+                   <!--------------- email entered in first stepper --------------->
+                 <p class="contact">Daniel@gmail.com</p>
+            </div>
+            <div class="change">
+                 <p>Change</p>
+            </div>
+       </section>
+       <section class="ship-to-container">
+            <div class="info">
+                 <p class="info-title">Ship To</p>
+                            <!--------------- address entered in first stepper --------------->
+                 <p class="ship-to">Grove Street, 12, San Andreas, Jamaica</p>
+            </div>
+            <div class="change">
+                 <p>Change</p>
+            </div>
+       </section>
+  </div>
+
+  <div class="shipping-method">
+       <p>Shipping Method</p>
+       <div style="display:flex; align-items: center;" class="">
+          <input type="radio" name="radio">
+          <label class="container">Shipping Fee</label>
+       </div>
+  </div>
+
+  <!----------- lower navigation ----------->
+  <div class="lower-navigation">
+       <section class="return-option" style="cursor: pointer;">
+           <i class="fa-solid fa-less-than"></i>
+           <p style=" margin-left: 8px;">Return to Cart</p>
+       </section>
+     
+       <section>
+           <button class="cnt-shopping" style="cursor: pointer;">Continue to Shopping</button>
+       </section>
+   </div>
+     </section>
+
+    <!----------- items purchased ----------->
+    <section class="items-purchase">
+    <!--------------- loop should start here for each item --------------->
+     <div class="prd-pricing-details">
+         <section class="img-and-name">
+             <section class="img">
+                <!--------------- each item image --------------->
+                 <img src="/assets/axe 1.png" alt="">
+                 <div class="count">1</div>
+             </section>
+
+             <section class="name">
+                <!--------------- each item name --------------->
+                 <p class="prd-name">Timerwood Axe</p>
+                 <!--------------- each item size and color --------------->
+                 <p class="prd-size">Small / Red</p>
+             </section>
+         </section>
+
+         <section class="price">
+            <!--------------- each item price --------------->
+             <p  class="amount">$1,200.00</p>
+         </section>
+     </div>
+     <!--------------- loop ends here --------------->
+
+     <div class="sub-total-container">
+         <div class="sub-total">
+             <p class="sub-total-name">Subtotal</p>
+             <!--------------- item subtotal --------------->
+             <p class="amount">$1,200.00</p>
+         </div>
+         <div class="shipping">
+             <p class="shipping-name">Shipping</p>
+             <!--------------- shipping sum --------------->
+             <p class="amount">$2,250.00</p>
+         </div>
+     </div>
+
+     <div class="total">
+         <p>Total</p>
+         <!--------------- total--------------->
+         <p>$1,200.00</p>
+     </div>
+ </section>
+     
+</div>

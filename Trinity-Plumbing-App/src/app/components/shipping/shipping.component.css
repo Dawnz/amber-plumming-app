@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.shipping-info{
+    border: 1px solid #000000;
+    border-radius: 10px;    
+    padding: 10px;
+    margin-top: 10%;
+}
+
+.shipping-info {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.shipping-info .info-title{
+    font-size: 20px;
+}
+
+.contact-container, .ship-to-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact, .ship-to{
+    font-size: 16px;
+    margin-left: 30px
+}
+
+.contact-container .info, .ship-to-container .info{
+    display: flex;
+    align-items: center;
+}
+
+.contact-container {
+    border-bottom: 1px solid black;
+}
+
+/*---------- lower navigation ---------- */
+.lower-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.lower-navigation .return-option{
+    display: flex;
+    align-items: center;
+    color: #0082C7;
+}
+
+.lower-navigation .return-option p{
+    font-family: 'Inter';
+    font-size: 20px;
+}
+
+.lower-navigation .cnt-shopping{
+    background: #0082C7;
+    border-radius: 11px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: .8em .8em;
+}
+
+.change{
+    font-weight: 400;
+    font-size: 16px;
+    color: #1DA1F2;
+    cursor: pointer;
+}
+
+.items-purchase{
+    padding: 40px;
+    background: #FAFAFA;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.prd-pricing-details, .sub-total-container {
+    border-bottom: 1px solid black;
+    padding-bottom: 6%;
+}
+
+.prd-pricing-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.prd-pricing-details .img{
+    width: 105px;
+    height: 105px;
+    margin-right: 20px;
+}
+
+.prd-pricing-details .name .prd-name ,.sub-total-name, .shipping p{
+    font-size: 20px;
+}
+
+.prd-pricing-details .prd-size{
+    font-size:20px;
+}
+
+.prd-pricing-details .img-and-name{
+    display: flex;
+    align-items: center;
+    line-height: 4px;
+    position: relative;
+}
+
+.count{
+    width: 34px;
+    height: 34px;
+    left: 85px;
+    top: -16px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.prd-pricing-details .img img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.amount{
+    font-size: 20px;
+}
+
+.sub-total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shipping{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+
+.total p {
+    font-size: 28px;
+}
+
+.shipping-method{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.shipping-method p{
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.shipping-method div{
+    border: 1px solid black;
+    border-radius: 10px;    
+    padding: 20px;
+}

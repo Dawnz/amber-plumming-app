@@ -1,0 +1,48 @@
+<!-- card design -->
+  <div class="product-wrapper" >
+    <div class="box-up">
+        <!------------- product image -------------->
+        <div class="product-img">
+          <img class="img" src="{{products.img}}" alt="" width="100%">
+        </div>
+     
+      <div class="img-info">
+          <div class="info-inner">
+            <!------------- product name from database -------------->
+            <span class="p-name">{{products.name}}</span>
+          </div>
+
+        <div class="a-size">
+              <!------------- product actions -------------->
+          <div>
+            <img src="/assets/eye.png" alt="">
+          </div>
+
+          <div>
+            <img src="/assets/wishlist.png" alt="">
+          </div>
+
+          <div>
+            <img src="/assets/shopping-cart.png" alt="">
+          </div>
+        </div>
+
+     </div>
+        </div>
+
+      <div class="box-down">
+        <div class="h-bg">
+          <div class="h-bg-inner"></div>
+      </div>
+
+          <a class="cart" href="#">
+                <!------------- product price -------------->
+            <span class="price">{{products.price | currency}}</span>
+            <span class="add-to-cart">
+               <!------------- product add to cart -------------->
+              <span class="txt">Add to cart</span>
+            </span>
+          </a>
+        </div>
+</div>
+

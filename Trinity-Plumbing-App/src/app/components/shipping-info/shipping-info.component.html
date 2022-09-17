@@ -1,0 +1,126 @@
+<div class="container">
+
+    <!----------- contact information ----------->
+    <section class="contact-info" >
+        <!-- shipping navigation -->
+        <app-stepper-nav></app-stepper-nav>
+
+         <!----------- shipping and contact form ----------->
+        <div class="shipping-contact-info" >
+            <form action="" [formGroup]="shippingInfo" (submit)=" shippingInfoSubmit()">
+            <section class="login">
+                <h4>Contact Information</h4>
+                <p style="margin: 30px 0 6px 0px;">Already have an account ? <a href="">Login</a></p>
+            </section>
+
+            <input type="text" class="email" placeholder="Email or Mobile Number" >
+            <div>
+                <input type="checkbox" name="" id="">
+                Email me with news and offers 
+            </div>
+
+            
+         <!----------- shipping address ----------->
+            <section>
+                <h4>Shipping Address</h4>
+
+                   
+                        <div class="input-container" class="select">
+                            <select name="" id="" formControlName="country">
+                                <option value="" disabled selected>Country/Region</option>
+                                <option value="{{location}}" *ngFor="let location of locations">{{location}}</option>
+                             </select>
+                             <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            
+                        </div>
+        
+                        <!----------- customer name ----------->
+                        <div class="customer-name input-container">
+                            <input type="text" placeholder="First Name" formControlName="firstName">
+                            <input type="text" placeholder="Last Name" formControlName="lastName">
+                        </div>
+        
+                        <!----------- address ----------->
+                        <div class="input-container">
+                            <input type="text" class="address" placeholder="Address" formControlName="address">
+                        </div>
+        
+                        <!----------- apartment ----------->
+                        <div class="input-container">
+                            <input type="text" class="apartment" placeholder="Apartment, suite, ect. (optional)" formControlName="apartment">
+                        </div>
+        
+                        <!----------- city ----------->
+                        <div class="input-container">
+                            <input type="text" class="city" placeholder="City" formControlName="city">
+                        </div>
+        
+                        <div>
+                            <input type="checkbox" name="" id="" >
+                            save this information
+                        </div>
+                       
+                         <!----------- lower navigation ----------->
+                        <div class="lower-navigation">
+                            <section class="return-option" style="cursor: pointer;">
+                                <i class="fa-solid fa-less-than"></i>
+                                <p style=" margin-left: 8px;">Return to Cart</p>
+                            </section>
+                          
+                            <section>
+                                <button class="cnt-shopping" style="cursor: pointer;">Continue to Shopping</button>
+                            </section>
+                        </div>
+                    
+                  <!----------- lower navigation ends here ----------->
+            </section>
+        </form>
+        </div>
+
+    </section>
+
+     <!----------- items purchased ----------->
+    <section class="items-purchase">
+
+         <!----------- this section will be a loop for each product in cart ----------->
+        <div class="prd-pricing-details">
+            <section class="img-and-name">
+                <section class="img">
+                     <!----------- item image ----------->
+                    <img src="/assets/axe 1.png" alt="">
+                    <div class="count">1</div>
+                </section>
+
+                <section class="name">
+                     <!----------- item name in cart ----------->
+                    <p class="prd-name">Timerwood Axe</p>
+                    <p class="prd-size">Small / Red</p>
+                </section>
+            </section>
+
+            <section class="price">
+                 <!----------- item price ----------->
+                <p  class="amount">$1,200.00</p>
+            </section>
+        </div>
+         <!----------- loop ends here ----------->
+
+        <div class="sub-total-container">
+            <div class="sub-total">
+                <p class="sub-total-name">Subtotal</p>
+                  <!----------- sub total price ----------->
+                <p class="amount">$1,200.00</p>
+            </div>
+            <div class="shipping">
+                <p class="shipping-name">Shipping</p>
+                <p>calculated at next step</p>
+            </div>
+        </div>
+
+        <div class="total">
+            <p>Total</p>
+              <!----------- total price ----------->
+            <p>$1,200.00</p>
+        </div>
+    </section>
+</div> 
