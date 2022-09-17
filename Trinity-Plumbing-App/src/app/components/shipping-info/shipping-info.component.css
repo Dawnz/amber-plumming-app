@@ -128,17 +128,17 @@ select{
 }
 
 .prd-pricing-details .img{
-    width: 105px;
-    height: 105px;
-    margin-right: 18px;
+    width: 84px;
+    height: 84px;
+    margin-right: 20px;
 }
 
 .prd-pricing-details .name .prd-name ,.sub-total-name, .shipping-name{
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .prd-pricing-details .prd-size{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .prd-pricing-details .img-and-name{
@@ -149,10 +149,10 @@ select{
 }
 
 .count{
-    width: 34px;
-    height: 34px;
-    left: 85px;
-    top: -16px;
+    width: 26px;
+    height: 26px;
+    left: 70px;
+    top: -12px;
     border-radius: 50%;
     background: #D9D9D9;
     border: 1px solid #000000;
@@ -169,7 +169,7 @@ select{
 }
 
 .amount{
-    font-size: 23px;
+    font-size: 18px;
 }
 
 .sub-total{
@@ -191,5 +191,5 @@ select{
 }   
 
 .total p {
-    font-size: 28px;
+    font-size: 22px;
 }
