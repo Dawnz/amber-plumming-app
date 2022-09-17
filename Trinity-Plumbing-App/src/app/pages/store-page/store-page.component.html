@@ -75,18 +75,20 @@
 
       <!-- <app-item-box></app-item-box> -->
       
-      <app-card [products]="products" *ngFor="let products of products"></app-card>
+      <app-card [products]="products" *ngFor="let products of pageSlice"></app-card>
           <!------------- pagination for items-------------->
-       <!-- <div class="paginator-container">
-          <mat-paginator 
-                  [length]= products.length        
-                  [pageSize]= 6
-                  [pageSizeOptions]= '[6, 12, 18, 100]'
-                  (page)="pageSize($event)"
-                  aria-label="Select page">
-          </mat-paginator>
-      </div> -->
        
+       
+  </div>
+
+  <div class="paginator-container">
+    <mat-paginator 
+            [length]= products.length     
+            [pageSize]= 6
+            [pageSizeOptions]= '[6, 12, 18, 100]'
+            (page)="pageSize($event)"
+            aria-label="Select page">
+    </mat-paginator>
   </div>
 </div>
 
