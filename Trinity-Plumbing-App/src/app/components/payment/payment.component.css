@@ -12,7 +12,7 @@
 .shipping-info{
     border: 1px solid #000000;
     border-radius: 10px;    
-    padding: 10px;
+    padding: 0px 10px;
     margin-top: 10%;
     font-family: 'Inter';
     font-style: normal;
@@ -20,7 +20,7 @@
 }
 
 .shipping-info .info-title{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .contact-container, .ship-to-container{
@@ -30,7 +30,7 @@
 }
 
 .contact, .ship-to{
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 30px
 }
 
@@ -49,7 +49,7 @@
 
 .change{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     color: #1DA1F2;
     cursor: pointer;
 }
