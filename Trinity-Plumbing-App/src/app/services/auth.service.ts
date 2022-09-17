@@ -1,16 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import {
-  BehaviorSubject,
-  Observable,
-  map,
-  tap,
-  shareReplay,
-  of,
-  catchError,
-  throwError,
-} from 'rxjs';
+import { BehaviorSubject, Observable, map, tap } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { APIResponse } from '../interfaces/api-response';
 import { User, UserResponse } from '../interfaces/user';
@@ -26,17 +17,12 @@ export class AuthService {
 
   isLoggedIn$: Observable<boolean>;
   isLoggedOut$: Observable<boolean>;
-
-  private _handleHttpErrors(err: any) {
-    // return throwError((err: any) => {
-    //   return of({ status: err.status, message: err.message, data: retVal });
-    // });
-    return throwError(() => err.error.message);
-  }
+  token$: Observable<string | undefined>;
 
   constructor(private http: HttpClient, private router: Router) {
     this.isLoggedIn$ = this.user$.pipe(map((user) => !!user));
     this.isLoggedOut$ = this.isLoggedIn$.pipe(map((loggedIn) => !loggedIn));
+    this.token$ = this.user$.pipe(map((user) => user?.accessToken));
     const user = localStorage.getItem(AUTH_DATA);
     if (user) {
       this.subject.next(JSON.parse(user));
@@ -45,7 +31,6 @@ export class AuthService {
   login(credentials: User): Observable<APIResponse<UserResponse>> {
     return this.http
       .post<APIResponse<UserResponse>>(AUTH_ROUTE, {
-        // TODO. implement login
         email: credentials.email,
         password: credentials.password,
       })
@@ -53,10 +38,8 @@ export class AuthService {
         tap((user) => {
           this.subject.next(user.data);
 
-          localStorage.setItem(AUTH_DATA, JSON.stringify(user.data));
-        }),
-        catchError(this._handleHttpErrors)
-        // shareReplay()
+          localStorage.setItem(AUTH_DATA, JSON.stringify(user.data.user));
+        })
       );
   }
 

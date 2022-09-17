@@ -22,8 +22,11 @@ import { ShippingComponent } from './components/shipping/shipping.component';
 import { CardComponent } from './components/card/card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ErrorInterceptor } from './interceptors/error.interceptor';
+import { HeadersInterceptor } from './interceptors/headers.interceptor';
 import { PaymentComponent } from './components/payment/payment.component';
+
 
 @NgModule({
   declarations: [
@@ -54,7 +57,18 @@ import { PaymentComponent } from './components/payment/payment.component';
     MatPaginatorModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ErrorInterceptor,
+      multi: true,
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HeadersInterceptor,
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
