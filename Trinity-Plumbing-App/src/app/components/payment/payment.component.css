@@ -127,12 +127,6 @@
     justify-content: space-between;
 }
 
-/* .shipping{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
-
 .total{
     display: flex;
     align-items: center;
@@ -188,11 +182,15 @@
 
 .payment input{
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid rgb(111, 111, 111);
     border-radius: 10px;
     box-sizing: border-box;
     padding: 12px 0px 12px 6px;
     margin: 10px 4px 10px 4px;
+}
+
+.payment input:focus{
+    outline: none;
 }
 
 .payment::placeholder{
