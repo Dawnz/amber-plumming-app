@@ -22,14 +22,16 @@ export class HeadersInterceptor implements HttpInterceptor {
   }
 
   intercept(
-    request: HttpRequest<any>,
+    req: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
-    request = request.clone({
+    req = req.clone({
       setHeaders: {
         Authorization: `bearer ${this.token !== '' && this.token}`,
       },
     });
-    return next.handle(request);
+    console.log(req.headers);
+
+    return next.handle(req);
   }
 }

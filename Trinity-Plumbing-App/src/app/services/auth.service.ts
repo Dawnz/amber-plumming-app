@@ -31,7 +31,6 @@ export class AuthService {
   login(credentials: User): Observable<APIResponse<UserResponse>> {
     return this.http
       .post<APIResponse<UserResponse>>(AUTH_ROUTE, {
-        // TODO. implement login
         email: credentials.email,
         password: credentials.password,
       })
@@ -39,7 +38,7 @@ export class AuthService {
         tap((user) => {
           this.subject.next(user.data);
 
-          localStorage.setItem(AUTH_DATA, JSON.stringify(user.data));
+          localStorage.setItem(AUTH_DATA, JSON.stringify(user.data.user));
         })
       );
   }
