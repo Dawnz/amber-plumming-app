@@ -39,12 +39,14 @@
 
     <!----------- payment ----------->
     <div class="payment">
-        <h4>Payment</h4>
+        <h4 style="margin: 0;">Payment</h4>
         <p>All transactions are secure and encrypted</p>
 
         <div class="card-detail">
-            <form action="">
-                <p>Credit Card</p>
+            <div class="credit-card-title">
+                <p style="margin: 0;">Credit Card</p>
+            </div>
+            <form action="" class="form">
                 <div class="input-field">
                     <input type="text" placeholder="Card Number">
                 </div>
@@ -61,9 +63,30 @@
 
     <!----------- shipping info if change ----------->
     <div class="shipping">
-        <h4>Billing Address</h4>
-        <p>Select the address that matches your card or payment method.</p>
+            <h4 style="margin-top: 20px">Billing Address</h4>
+            <p>Select the address that matches your card or payment method.</p>  
     </div>
+
+    <div class="choose-shipment">
+        <input type="radio" id="sameAddress" name="address" value="sameAddress">
+        <label for="sameAddress">Same as Shipping Address</label><br>
+        <input type="radio" id="differentAddress" name="address" value="differentAddress">
+        <label for="differentAddress">Use a different billing Address</label><br>
+    </div>
+
+   
+  <!----------- lower navigation ----------->
+        <div class="lower-navigation">
+            <section class="return-option" style="cursor: pointer;">
+                <i class="fa-solid fa-less-than"></i>
+                <p style=" margin-left: 8px;">Return to Cart</p>
+            </section>
+        
+            <section>
+                <button class="cnt-shopping" style="cursor: pointer;">Pay Now</button>
+            </section>
+        </div>
+
     </section>
 
     <!----------- right section ----------->
