@@ -8,12 +8,12 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegistrationComponent } from './pages/registration/registration.component';
 import { StorePageComponent } from './pages/store-page/store-page.component';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
-import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 
-import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 import { AdminRegistrationComponent } from './pages/admin-registration/admin-registration.component';
 import { ShippingInfoComponent } from './components/shipping-info/shipping-info.component';
@@ -26,7 +26,6 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ErrorInterceptor } from './interceptors/error.interceptor';
 import { HeadersInterceptor } from './interceptors/headers.interceptor';
 import { PaymentComponent } from './components/payment/payment.component';
-
 
 @NgModule({
   declarations: [
