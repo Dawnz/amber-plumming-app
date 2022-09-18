@@ -171,9 +171,21 @@
     font-size: 24px;
 }
 
+.payment .cardNumber , .payment .cardSecurityCode{
+    position: relative;
+}
+
 .payment .card-detail{
     background-color: #C5C1C1;
     border-radius: 10px;
+}
+
+.payment .card-detail .icon{
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    height: 24px;
+    width: 20px;
 }
 
 .payment .form{
