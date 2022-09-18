@@ -186,7 +186,7 @@ header .links span{
 }
 
 /* ---------------items container------------ */
-.card-container{
+.card-items{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
