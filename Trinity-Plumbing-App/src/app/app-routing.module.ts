@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { AuthGuard } from './guards/auth.guard';
 import { AdminRegistrationComponent } from './pages/admin-registration/admin-registration.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'register', component: RegistrationComponent },
   { path: 'adminRegister', component: AdminRegistrationComponent },
   { path: 'store', component: StorePageComponent, canActivate: [AuthGuard] },
+  {path: 'details/:id', component: ProductDetailComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
