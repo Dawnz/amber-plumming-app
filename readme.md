@@ -18,8 +18,11 @@ This will be hosted locally and can be found if you are on the campus wifi
 Current server endpoint is [here](http://10.44.16.148:8080/)
 
 ### Run the Application.
+you can download the server side application to have a copy of the server side code at `https://github.com/Dawnz/amber-plumming-app-backend`
+install the dependencies using `npm i`
+launch the middleware using `npm run start`
+you can then start this application using  `ng serve` to have the application running
 
--TBA
 ## Folder Structure
 
 ### Components
