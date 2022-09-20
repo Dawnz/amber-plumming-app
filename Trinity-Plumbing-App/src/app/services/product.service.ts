@@ -31,4 +31,22 @@ export class ProductService {
       })
     );
   }
+  getProductById(id: number): Observable<APIResponse<Product>> {
+    return this.http.get<APIResponse<Product>>(`${PRODUCTS_ROUTE}/${id}`);
+  }
+  deleteProductById(id: number): Observable<APIResponse<Product>> {
+    return this.http.delete<APIResponse<Product>>(`${PRODUCTS_ROUTE}/${id}`);
+  }
+  addProduct(product: Product): Observable<APIResponse<Product>> {
+    return this.http.post<APIResponse<Product>>(PRODUCTS_ROUTE, product);
+  }
+  updateProductById(
+    id: number,
+    product: Product
+  ): Observable<APIResponse<Product>> {
+    return this.http.put<APIResponse<Product>>(
+      `${PRODUCTS_ROUTE}/${id}`,
+      product
+    );
+  }
 }

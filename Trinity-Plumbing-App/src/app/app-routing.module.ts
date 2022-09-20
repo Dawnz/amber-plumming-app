@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductDetailComponent } from './components/product-detail/product-detail.component';
-import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 import { AuthGuard } from './guards/auth.guard';
 import { AdminRegistrationComponent } from './pages/admin-registration/admin-registration.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
@@ -10,13 +10,13 @@ import { RegistrationComponent } from './pages/registration/registration.compone
 import { StorePageComponent } from './pages/store-page/store-page.component';
 
 const routes: Routes = [
-  { path: 'home', component: LandingPageComponent ,canActivate: [AuthGuard]  },
+  { path: 'home', component: LandingPageComponent, canActivate: [AuthGuard] },
   { path: 'cart', component: ShoppingCartComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegistrationComponent },
   { path: 'adminRegister', component: AdminRegistrationComponent },
   { path: 'store', component: StorePageComponent, canActivate: [AuthGuard] },
-  {path: 'details/:id', component: ProductDetailComponent},
+  { path: 'details/:id', component: ProductDetailComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
