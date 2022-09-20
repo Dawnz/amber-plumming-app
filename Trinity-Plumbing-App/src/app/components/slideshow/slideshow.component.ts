@@ -30,7 +30,7 @@ import { Component, OnInit, Input} from '@angular/core';
 
     .active{
       display :block;
-      height: 100vh;
+      height: 80vh;
       position: relative;
       clip-path: inset(0);
     }
